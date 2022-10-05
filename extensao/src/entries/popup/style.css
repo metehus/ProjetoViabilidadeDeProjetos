@@ -1,11 +1,40 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.reclamadinha-popup {
+  font-family: sans-serif;
+}
+.reclamadinha-popup .modal {
+  max-width: 280px;
+  padding: 20px;
+  background: white;
+  height: auto;
+  /* margin: 20px; */
+  border-radius: 16px;
+  /* border: 1px solid #d3d3d3; */
+  /* box-shadow: 2px 2px 16px #0000004b; */
+}
+.reclamadinha-popup .modal h1 {
+  font-size: 22px;
   text-align: center;
-  color: #2c3e50;
+  margin-bottom: 4px
+}
+.reclamadinha-popup .modal .comments {
+
 }
 
-h1 {
-  margin: 5px;
+.reclamadinha-popup .modal .comments > div {
+  padding: 9px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+.comments .upvotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 11px;
+}
+
+.comments .upvotes .value {
+  font-weight: 600;
 }

@@ -9,16 +9,16 @@ const manifest = {
     },
     default_popup: "src/entries/popup/index.html",
   },
-  background: {
-    service_worker: "src/entries/background/main.ts",
-  },
+  // background: {
+  //   service_worker: "src/entries/background/main.ts",
+  // },
   permissions: ['webNavigation', 'declarativeContent'],
-  // content_scripts: [
-  //   {
-  //     js: ["src/entries/contentScript/primary/main.ts"],
-  //     matches: ["*://*/*"],
-  //   },
-  // ],
+  content_scripts: [
+    {
+      js: ["src/entries/contentScript/primary/main.ts"],
+      matches: ["*://*/*"],
+    },
+  ],
   host_permissions: ["*://*/*"],
   icons: {
     16: "icons/16x16.png",
